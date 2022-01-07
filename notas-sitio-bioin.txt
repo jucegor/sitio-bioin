@@ -1,3 +1,8 @@
 https://codepen.io/piyushpd/pen/rNBJZWB
 Barra de navegación Bioin
 
+https://www.javascripttutorial.net/javascript-dom/javascript-width-height/
+Get the widht of an element
+
+https://cssgradient.io/
+Gradient creator
