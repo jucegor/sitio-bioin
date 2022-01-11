@@ -8,7 +8,6 @@ body{
 /* ---------horizontal-navbar-menu-----------*/
 #navbar-animmenu {
 	background: linear-gradient(65deg, rgba(0,0,0,1) 0%, rgba(34,79,128,1) 7%);
-	/* background:  rgba(34,79,128,1); */
 	float: left;
 	overflow: hidden;
 	position: relative;
@@ -19,7 +18,6 @@ body{
 	padding: 0px;
 	margin: 0px;
 }
-
 
 #navbar-animmenu li {
 	list-style-type: none;
@@ -125,4 +123,65 @@ body{
   width: auto;
   object-fit: contain;
   border-radius: 30px;
+}
+
+.hamburger {
+  background-color: white;
+  padding: 0px 5px;
+  margin: 0px;
+  border: white 1px solid;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 20%;
+  flex: 1;
+  display: none;
+  position:absolute;
+  top: 10px;
+  right:10px;
+}
+
+.hamburger:focus{
+  outline: none;
+}
+
+.hamburger img {
+  object-fit: fill;
+  width: 35px;
+  height: 35px;
+}
+
+@media screen and (max-width: 767px) {
+  .hamburger{
+    display: block;
+    top: 20px;
+    right:10px;
+  }
+
+  ul > li#inicio, ul > li#nosotros, ul > li#productos, ul > li#servicios, ul > li#contacto, ul > li#blog{
+    display: none;
+  }
+
+   ul > li#inicio.show-nav, ul > li#nosotros.show-nav, ul > li#productos.show-nav, ul > li#servicios.show-nav, ul > li#contacto.show-nav, ul > li#blog.show-nav{
+    padding: 5px 0px;
+    display: flex;
+  }
+
+  .logo{
+    background-color: white;
+    padding: 10px 5px;
+  }
+
+  #navbar-animmenu {
+	  background: linear-gradient(65deg, rgba(0,0,0,1) 0%, rgba(34,79,128,1) 60%);
+  }
+   .show-dropdown {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hori-selector{
+    display: none;
+  }
+
+
 }
