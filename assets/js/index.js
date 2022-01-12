@@ -1,9 +1,10 @@
 import {navbar} from "./navbar.js";
 navbar();
 
-import {tabs} from "./tabs.js";
-tabs();
-
 import { hamburger } from "./hamburger.js";
 hamburger();
+
+import {home} from "./home.js";
+home();
+
 console.log("Hello from index!");

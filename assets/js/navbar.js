@@ -55,7 +55,6 @@ export function navbar() {
     this.classList.add('active-li');
   });
 
-
-
+  console.log("Navbar loaded...")
 
 }
