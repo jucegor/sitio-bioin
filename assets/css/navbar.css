@@ -183,5 +183,8 @@ body{
     display: none;
   }
 
+  #navbar-animmenu>ul>li.active-li{
+    background-color: #fff;
+  }
 
 }
