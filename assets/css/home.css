@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Raleway&display=swap');
 
 :root{
   --blue: #326CAC;
   --dark: #414142;
   --dark-blue: #224F80;
   --font-poppins: 'Poppins', sans-serif;
+  --raleway: 'Raleway', sans-serif;
   --space: 4vw 0px;
 }
 /* ********************************* */
@@ -134,7 +135,7 @@ div.hero-logo > img{
 
   /* Tablet */
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     /* Responsive hero */
     div.hero-overlap-text {
       flex-direction: column;
@@ -149,6 +150,18 @@ div.hero-logo > img{
         width: 25vw;
         margin: 0px 2vw;
       }
+
+    /* Responsive presentacion*/
+    div.presentacion {
+        flex-direction: column;
+        padding: 0px;
+        align-items: center;
+    }
+
+    div.presentacion > div.reveal {
+      width: 80vw;
+      padding: 5px;
+    }
   }
   /* Desktop */
 
@@ -237,4 +250,31 @@ div.mision > div > img {
   width: 100px;
   height: auto;
   margin-bottom: 15px;
+}
+
+div.presentacion {
+  font-family: var(--raleway);
+  color: white;
+  background: linear-gradient(65deg, rgba(0,0,0,0.95) 0%, rgba(34,79,128,0.95) 60%),url('../images/Icon_Bioin.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 25px;
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+div.presentacion > div.reveal {
+  width: 50vw;
+  padding: 50px;
+}
+
+div.presentacion > div > div {
+  margin: 45px;
+  text-align: justify;
+}
+
+div.presentacion > div > div:nth-child(1) > strong {
+  color: #94BAE7;
+  padding: 4px;
 }
