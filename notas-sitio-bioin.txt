@@ -11,3 +11,9 @@ Sitios de la competencia
 http://www.boomerangrms.com/rms.html
 https://mcat.com.mx/
 https://www.dekapack.com.mx/
+
+
+Ideas:
+Elemento contador que suba hasta cierto numero
+https://codepen.io/bradtraversy/pen/poJwqOK
+

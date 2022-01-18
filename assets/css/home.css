@@ -130,12 +130,31 @@ div.hero-logo > img{
         margin: 0px 2vw;
       }
 
+      /* Responsive presentacion*/
+      div.presentacion {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        align-items: center;
+      }
+
+      div.presentacion > div.reveal {
+        width: 95vw;
+        padding: 0px;
+      }
+
+      div.presentacion > div > div {
+        margin: 2px 5px;
+        text-align: justify;
+        font-size: 16px;
+      }
+
   }
 
 
   /* Tablet */
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 810px) {
     /* Responsive hero */
     div.hero-overlap-text {
       flex-direction: column;
@@ -153,14 +172,21 @@ div.hero-logo > img{
 
     /* Responsive presentacion*/
     div.presentacion {
-        flex-direction: column;
-        padding: 0px;
-        align-items: center;
+      display: flex;
+      flex-direction: column;
+      padding: 0px;
+      align-items: center;
+      font-size: 20px;
     }
 
     div.presentacion > div.reveal {
-      width: 80vw;
-      padding: 5px;
+      width: 95vw;
+      padding: 0px;
+    }
+
+    div.presentacion > div > div {
+      margin: 30px 45px;
+      text-align: justify;
     }
   }
   /* Desktop */
@@ -182,6 +208,24 @@ div.hero-logo > img{
         width: 15vw;
         margin: 0px 2vw;
       }
+      /* Responsive presentacion */
+      div.presentacion {
+        display: flex;
+        flex-direction: row;
+        padding: 50px;
+      }
+
+      div.presentacion > div.reveal {
+        width: 50vw;
+        padding: 50px;
+      }
+
+      div.presentacion > div > div {
+        margin: 45px;
+        text-align: justify;
+      }
+
+
   }
 
 /* fin de media queries */
@@ -252,6 +296,8 @@ div.mision > div > img {
   margin-bottom: 15px;
 }
 
+/*Presentacion general styles*/
+
 div.presentacion {
   font-family: var(--raleway);
   color: white;
@@ -259,22 +305,9 @@ div.presentacion {
   background-repeat: no-repeat;
   background-position: center;
   font-size: 25px;
-  padding: 50px;
-  display: flex;
-  flex-direction: row;
-}
-
-div.presentacion > div.reveal {
-  width: 50vw;
-  padding: 50px;
-}
-
-div.presentacion > div > div {
-  margin: 45px;
-  text-align: justify;
 }
 
 div.presentacion > div > div:nth-child(1) > strong {
-  color: #94BAE7;
-  padding: 4px;
-}
+        color: #94BAE7;
+        padding: 4px;
+      }

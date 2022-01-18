@@ -4,7 +4,8 @@ navbar();
 import { hamburger } from "./hamburger.js";
 hamburger();
 
-import {home} from "./home.js";
+import {home, counter} from "./home.js";
 home();
+counter();
 
 console.log("Hello from index!");
