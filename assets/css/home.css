@@ -118,6 +118,15 @@ div.hero-logo > img{
         margin-bottom: 50px;
       }
 
+      div.mision > div.up > div > p{
+        font-size: 16px;
+      }
+
+      div.bottom > p{
+        font-size: 16px;
+      }
+
+
       div.mision > div.bottom {
         margin-left: auto;
         margin-right: auto;
@@ -147,6 +156,21 @@ div.hero-logo > img{
         margin: 2px 5px;
         text-align: justify;
         font-size: 16px;
+      }
+
+      /*Responsive numeros*/
+      div.numeros {
+        flex-direction: column;
+        height: 60vh;
+      }
+
+      div.numeros > div {
+        padding: 30px 0px;
+      }
+
+      div.numeros > div > img{
+        height: 50px;
+        width: auto;
       }
 
   }
@@ -203,6 +227,11 @@ div.hero-logo > img{
       width: 60vw;
     }
 
+    /*Responsive mision*/
+      div.mision > * p {
+        font-size: 20px;
+      }
+
      /* Responsive clientes */
       div.clientes > ul > li > img{
         width: 15vw;
@@ -225,6 +254,16 @@ div.hero-logo > img{
         text-align: justify;
       }
 
+      /*Responsive numeros*/
+      div.numeros {
+        flex-direction: row;
+        height: 45vh;
+      }
+
+      div.numeros > div > img{
+        height: 80px;
+        width: auto;
+      }
 
   }
 
@@ -233,7 +272,7 @@ div.hero-logo > img{
 div.clientes > h1{
   font-family: var(--font-poppins);
   text-align: center;
-  margin: 60px 0px;
+  margin: 40px 0px;
 }
 
 div.clientes{
@@ -262,7 +301,7 @@ div.mision{
   display: block;
   justify-content: space-evenly;
   padding: var(--space);
-  background-color: var(--dark);
+  background: linear-gradient(90deg, rgba(0,0,0,0.95) 0%, rgba(0, 0, 0, 0.75) 60%);
 }
 
 div.mision > div.up {
@@ -281,10 +320,6 @@ div.mision h1, p {
   color:white;
 }
 
-div.mision > * p {
-  font-size: 20px;
-}
-
 div.mision > div {
   text-align: center;
   padding: 50px;
@@ -301,13 +336,45 @@ div.mision > div > img {
 div.presentacion {
   font-family: var(--raleway);
   color: white;
-  background: linear-gradient(65deg, rgba(0,0,0,0.95) 0%, rgba(34,79,128,0.95) 60%),url('../images/Icon_Bioin.png');
+  background: linear-gradient(90deg, rgba(0,0,0,0.95) 0%, rgba(34,79,128,0.95) 60%),url('../images/Icon_Bioin.png');
   background-repeat: no-repeat;
   background-position: center;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 div.presentacion > div > div:nth-child(1) > strong {
-        color: #94BAE7;
-        padding: 4px;
-      }
+  color: #94BAE7;
+  padding: 4px;
+}
+
+/*Numeros general styles*/
+div.numeros {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(0,0,0,0.95) 0%, rgba(34,79,128,0.95) 60%);
+  padding: 50px 0px;
+}
+
+div.numeros > div{
+  text-align: center;
+  vertical-align:middle;
+  font-family: var(--raleway);
+  color: white;
+}
+
+div.numeros > div > img{
+  filter: invert(1);
+  margin: 5px;
+}
+
+div.numeros > div > h1{
+  font-family: var(--raleway);
+  font-size: 30px;
+  font-weight: 100;
+}
+
+div.numeros > div > div.counter{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 45px;
+}
