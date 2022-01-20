@@ -1,11 +1,11 @@
 export function hamburger() {
   const hamburger = document.getElementById('hamburger');
   const navMenu = [];
-  inicio = document.getElementById('inicio');
-  nosotros = document.getElementById('nosotros');
-  productos = document.getElementById('productos');
-  servicios = document.getElementById('servicios');
-  blog = document.getElementById('blog');
+  var inicio = document.getElementById('inicio');
+  var nosotros = document.getElementById('nosotros');
+  var productos = document.getElementById('productos');
+  var servicios = document.getElementById('servicios');
+  var blog = document.getElementById('blog');
 
   navMenu.push(inicio);
   navMenu.push(nosotros);
@@ -17,10 +17,8 @@ export function hamburger() {
   hamburger.addEventListener('click', () => {
     navMenu.forEach(navElement => {
       navElement.classList.toggle('show-nav');
-      console.log(navElement);
     });
   })
 
-
-  console.log(navMenu);
+  console.log("Mobile menu loaded...")
 }

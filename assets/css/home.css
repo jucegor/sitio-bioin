@@ -1,13 +1,380 @@
-.parallax {
-  /* The image used */
-  background-image: url('');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Raleway&display=swap');
 
-  /* Full height */
-  height: 100%;
+:root{
+  --blue: #326CAC;
+  --dark: #414142;
+  --dark-blue: #224F80;
+  --font-poppins: 'Poppins', sans-serif;
+  --raleway: 'Raleway', sans-serif;
+  --space: 4vw 0px;
+}
+/* ********************************* */
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+/* Javascript classes to add */
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* ********************************* */
+
+div#inicio-tab{
+  max-width: 100vw;
+}
+
+div.hero-overlap-text{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 31, 97, 0.1)), url("../images/home-hero.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+div.hero-overlap-text>div>p{
+  font-family: var(--font-poppins);
+  color:white;
+  font-size: 64px;
+  background: linear-gradient(90deg, rgba(0,0,0,0.6), rgba(0,0,0,0.3));
+  border-top-left-radius: 25px;
+  text-align: left;
+  padding: 15px;
+  animation: text-slide 1s forwards;
+  transform:translateX(-200%);
+}
+
+div.hero-logo {
+  width: 60vw;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.0001));
+  padding: 45px;
+  border-top-left-radius: 25px;
+  animation: image-apperance 3s none;
+}
+
+div.hero-logo > img{
+  max-height: auto;
+  object-fit: contain;
+  position: relative;
+}
+
+@keyframes image-apperance {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes text-slide {
+  to {
+    transform:translateX(0%);
+  }
+}
+
+/* inicio de media queries */
+
+/* Smartphone */
+
+  @media screen and (max-width: 480px) {
+    /*Responsive hero*/
+    div.hero-overlap-text {
+      flex-direction: column;
+    }
+
+    div.hero-overlap-text > div > img{
+      width: 85vw;
+    }
+
+    div.hero-overlap-text > div > p{
+      font-size: 36px;
+    }
+
+    /* Responsive mision */
+      div.mision > div {
+        padding: 0;
+        margin: 0;
+      }
+
+      div.mision > div.up {
+        flex-direction: column;
+      }
+
+      div.mision > div.up > div{
+        margin-bottom: 50px;
+      }
+
+      div.mision > div.up > div > p{
+        font-size: 16px;
+      }
+
+      div.bottom > p{
+        font-size: 16px;
+      }
+
+
+      div.mision > div.bottom {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+      }
+
+      /* Responsive clientes */
+      div.clientes > ul > li > img{
+        width: 50vw;
+        margin: 0px 2vw;
+      }
+
+      /* Responsive presentacion*/
+      div.presentacion {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        align-items: center;
+      }
+
+      div.presentacion > div.reveal {
+        width: 95vw;
+        padding: 0px;
+      }
+
+      div.presentacion > div > div {
+        margin: 2px 5px;
+        text-align: justify;
+        font-size: 16px;
+      }
+
+      /*Responsive numeros*/
+      div.numeros {
+        flex-direction: column;
+        height: 60vh;
+      }
+
+      div.numeros > div {
+        padding: 30px 0px;
+      }
+
+      div.numeros > div > img{
+        height: 50px;
+        width: auto;
+      }
+
+  }
+
+
+  /* Tablet */
+
+  @media screen and (max-width: 810px) {
+    /* Responsive hero */
+    div.hero-overlap-text {
+      flex-direction: column;
+    }
+
+    div.hero-overlap-text > div > img{
+      width: 65vw;
+    }
+
+     /* Responsive clientes */
+      div.clientes > ul > li > img{
+        width: 25vw;
+        margin: 0px 2vw;
+      }
+
+    /* Responsive presentacion*/
+    div.presentacion {
+      display: flex;
+      flex-direction: column;
+      padding: 0px;
+      align-items: center;
+      font-size: 20px;
+    }
+
+    div.presentacion > div.reveal {
+      width: 95vw;
+      padding: 0px;
+    }
+
+    div.presentacion > div > div {
+      margin: 30px 45px;
+      text-align: justify;
+    }
+  }
+  /* Desktop */
+
+  @media (min-width: 1080px) {
+    div.hero-overlap-text {
+    flex-direction: row;
+  }
+    div.hero-overlap-text>div>p{
+      font-size: 36px;
+      background: linear-gradient(90deg, rgba(0,0,0,0.7), rgba(0,0,0,0.5));
+    }
+    div.hero-logo >img {
+      width: 60vw;
+    }
+
+    /*Responsive mision*/
+      div.mision > * p {
+        font-size: 20px;
+      }
+
+     /* Responsive clientes */
+      div.clientes > ul > li > img{
+        width: 15vw;
+        margin: 0px 2vw;
+      }
+      /* Responsive presentacion */
+      div.presentacion {
+        display: flex;
+        flex-direction: row;
+        padding: 50px;
+      }
+
+      div.presentacion > div.reveal {
+        width: 50vw;
+        padding: 50px;
+      }
+
+      div.presentacion > div > div {
+        margin: 45px;
+        text-align: justify;
+      }
+
+      /*Responsive numeros*/
+      div.numeros {
+        flex-direction: row;
+        height: 45vh;
+      }
+
+      div.numeros > div > img{
+        height: 80px;
+        width: auto;
+      }
+
+  }
+
+/* fin de media queries */
+
+div.clientes > h1{
+  font-family: var(--font-poppins);
+  text-align: center;
+  margin: 40px 0px;
+}
+
+div.clientes{
+  overflow-x: hidden;
+  max-width: 100vw;
+  margin: var(--space)
+}
+
+div.clientes > ul{
+  display: flex;
+  list-style: none;
+  animation: clientes 60s infinite alternate linear;
+}
+
+
+@keyframes clientes {
+	100% {margin-left: 0;}
+	100% {margin-left: 0;}
+
+	100% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+
+}
+
+div.mision{
+  display: block;
+  justify-content: space-evenly;
+  padding: var(--space);
+  background: linear-gradient(90deg, rgba(0,0,0,0.95) 0%, rgba(0, 0, 0, 0.75) 60%);
+}
+
+div.mision > div.up {
+  display: flex;
+}
+
+div.mision > div.bottom {
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.mision h1, p {
+  font-family: var(--font-poppins);
+  padding: 0px 3vw;
+  color:white;
+}
+
+div.mision > div {
+  text-align: center;
+  padding: 50px;
+}
+
+div.mision > div > img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/*Presentacion general styles*/
+
+div.presentacion {
+  font-family: var(--raleway);
+  color: white;
+  background: linear-gradient(90deg, rgba(0,0,0,0.95) 0%, rgba(34,79,128,0.95) 60%),url('../images/Icon_Bioin.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 20px;
+}
+
+div.presentacion > div > div:nth-child(1) > strong {
+  color: #94BAE7;
+  padding: 4px;
+}
+
+/*Numeros general styles*/
+div.numeros {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(0,0,0,0.95) 0%, rgba(34,79,128,0.95) 60%);
+  padding: 100px 0px;
+}
+
+div.numeros > div{
+  text-align: center;
+  vertical-align:middle;
+  font-family: var(--raleway);
+  color: white;
+}
+
+div.numeros > div > img{
+  filter: invert(1);
+  margin: 5px;
+}
+
+div.numeros > div > h1{
+  font-family: var(--raleway);
+  font-size: 30px;
+  font-weight: 100;
+}
+
+div.numeros > div > div.counter{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 45px;
 }
