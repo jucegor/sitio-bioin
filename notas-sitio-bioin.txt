@@ -17,3 +17,12 @@ Ideas:
 Elemento contador que suba hasta cierto numero
 https://codepen.io/bradtraversy/pen/poJwqOK
 
+
+Read a JSON file using fetch
+https://www.delftstack.com/howto/javascript/load-json-file-in-javascript/
+
+Grid alignment of cards
+https://webdesign.tutsplus.com/es/articles/flexbox-vs-css-grid-which-should-you-use--cms-30184
+
+
+
