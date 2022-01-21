@@ -314,7 +314,7 @@ div.mision > div.bottom {
   margin-right: auto;
 }
 
-div.mision h1, p {
+div#inicio-tab > div.mision > div.up, div.bottom > h1, p {
   font-family: var(--font-poppins);
   padding: 0px 3vw;
   color:white;
