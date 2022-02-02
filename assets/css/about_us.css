@@ -2,34 +2,115 @@ div#nosotros-tab{
   max-width: 100vw;
 }
 
-div.main-us {
-  display: flex;
-  flex-direction:row;
-  width: 100vw;
-  justify-content: space-evenly;
-}
 
-div.main-us > img{
-  height: 45vh;
-  width: 45vh;
-  margin: 45px;
-  object-fit: cover;
-  border-radius: 50%;
-}
 
-div.text-hero-us{
-  display: inline-flex;
-  align-items: center;
-}
+/* Smartphone */
 
-div.text-hero-us > p{
-  color: black;
-  font-size: 21px;
-}
+  @media screen and (max-width: 480px) {
+    div.main-us {
+      display: block;
+      width: 95vw;
+      justify-content: space-evenly;
+    }
 
-div.text-hero-us > h1{
-  color: lightslategray;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  text-transform: uppercase;
-  font-size: 40px;
-}
+    div.main-us > img{
+      height: 45vh;
+      width: 45vh;
+      margin: 20px 0px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    div.text-hero-us > img{
+      height: 45vh;
+      width: auto;
+    }
+
+    div.text-hero-us > p{
+      color: black;
+      font-size: 21px;
+      font-family: var(--font-poppins);
+      margin-top: -60px;
+      text-align: center;
+      font-family: var(--font-poppins);
+      letter-spacing: 1px;
+      background-image: url('../images/Icon_Bioin.png');
+    }
+  }
+
+/* Tablet */
+  @media screen and (max-width: 810px) {
+    div.main-us {
+      display: block;
+      width: 95vw;
+      justify-content: space-evenly;
+      text-align: center;
+    }
+
+
+    div.main-us > img{
+      display: none;
+    }
+
+    div.text-hero-us > img{
+      height: 25vh;
+      width: auto;
+     }
+
+    div.text-hero-us > p{
+      color: black;
+      font-size: 21px;
+      margin-top: -60px;
+      text-align: center;
+      letter-spacing: 3px;
+      background: linear-gradient(90deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.95) 60%),url('../images/Icon_Bioin.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+/* Desktop */
+  @media screen and (min-width: 1080px) {
+    div.main-us {
+      display: flex;
+      flex-direction:row;
+      width: 95vw;
+      justify-content: space-evenly;
+      margin: 15vh 0px;
+    }
+
+    div.main-us > img{
+      height: 45vh;
+      width: 45vh;
+      margin: 45px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    div.text-hero-us{
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    div.text-hero-us > img{
+      height: 45vh;
+      width: 45vh;
+    }
+
+    div.text-hero-us > p{
+      color: black;
+      font-size: 21px;
+      letter-spacing: 3px;
+      background: linear-gradient(90deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.95) 60%),url('../images/Icon_Bioin.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    div.text-hero-us > h1{
+      color: lightslategray;
+      font-family: var(--font-poppins);
+      text-transform: uppercase;
+      font-size: 40px;
+    }
+  }
