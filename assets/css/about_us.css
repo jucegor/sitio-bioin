@@ -35,6 +35,7 @@ div#nosotros-tab{
       font-family: var(--font-poppins);
       letter-spacing: 1px;
       background-image: url('../images/Icon_Bioin.png');
+      padding: 35px 25px;
     }
   }
 
@@ -66,6 +67,7 @@ div#nosotros-tab{
       background: linear-gradient(90deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.95) 60%),url('../images/Icon_Bioin.png');
       background-repeat: no-repeat;
       background-position: center;
+      padding: 35px 25px;
     }
   }
 
@@ -105,6 +107,7 @@ div#nosotros-tab{
       background: linear-gradient(90deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.95) 60%),url('../images/Icon_Bioin.png');
       background-repeat: no-repeat;
       background-position: center;
+      padding: 35px 25px;
     }
 
     div.text-hero-us > h1{
