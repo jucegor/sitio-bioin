@@ -49,7 +49,6 @@
         <img src="https://img.icons8.com/material-outlined/24/000000/blog.png" />
         Blog</a>
       </li>
-
     </ul>
   </div>
   <button class="hamburger" id="hamburger">
@@ -57,9 +56,7 @@
   </button>
 </header>
 <body>
-  <div style="opacity: 0; height: 0px;">
-    <a href="https://icons8.com/icon/83326/home">Home icon by Icons8</a>
-  </div>
+  <!-- begin HOME -->
   <div id="inicio-tab" class="tabContent">
     <div class="hero">
       <div class="hero-overlap-text">
@@ -137,7 +134,6 @@
         <p>En Bioin estamos comprometidos a superar nuestro liderazgo mediante el cumplimiento de los requisitos aplicables en nuestra operación, mejorando los diseños y procesos, fomentando el desarrollo del personal, elevando su talento y actitud de trabajo en equipo, por medio de la mejora continua y la implementación de nuevas tecnologías.</p>
       </div>
     </div>
-
     <div class="numeros">
       <div class="reveal">
         <img src="https://img.icons8.com/ios/100/000000/new-company.png" />
@@ -157,7 +153,10 @@
       </div>
     </div>
   </div>
-  <div id="nosotros-tab" class="tabContent">
+  <!-- end HOME -->
+
+  <!-- begin ABOUT US -->
+  <div id="nosotros-tab" class="tabContent parallax">
     <div class="main-us reveal">
       <img src="./assets/images/hero_products_racks.jpg" alt="racks">
       <div class="text-hero-us">
@@ -191,10 +190,15 @@
       </div>
     </div>
   </div>
+  <!-- end ABOUT US -->
 
-
+  <!-- begin PRODUCTS -->
   <div id="productos-tab" class="tabContent">
-    <img src="./assets/images/nuestros-productos.png" alt="nuestros productos">
+    <div>
+      <img src="./assets/images/termo-product.png" alt="termoformado">
+      <img src="./assets/images/nuestros-productos.png" alt="nuestros productos">
+      <img src="./assets/images/rack-product.png" alt="rack">
+    </div>
     <div class="product-detail reveal">
       <h1>Termoformados</h1>
       <div>
@@ -211,6 +215,7 @@
           En casos especiales cuenta con insertos que favorecen la recepción de materiales delicados, y aseguran la posición de
           los componentes alojados.
         </p>
+
         <p>
           <strong>Características:</strong><br>
           <br>&#8226; Alta resistencia<br>
@@ -367,16 +372,69 @@
     <hr>
 
   </div>
+  <!-- end PRODUCTS -->
 
+  <!-- begin SERVICES -->
   <div id="servicios-tab" class="tabContent">
-    <h1>Services</h1>
+    <div>
+      <img src="./assets/images/welder.jpg" alt="soldador" id="welder-services">
+      <img src="./assets/images/nuestros-servicios.png" alt="nuestros servicios">
+    </div>
+    <div class="service-icons">
+      <div>
+        <img src="https://img.icons8.com/external-wanicon-flat-wanicon/64/000000/external-robot-hand-artificial-intelligence-wanicon-flat-wanicon.png" />
+        <h1>Ingeniería y Diseño</h1>
+        <p>Elaboración de diseños a través de diversas metodologías, incluyendo ingeniería inversa. Nuestro equipo de profesionales
+        cuenta con las competencias y credenciales necesarias para el desarrollo de diseños precisos y certeros.</p>
+      </div>
+      <div>
+        <img src="https://img.icons8.com/color/96/000000/robot--v2.png" />
+        <h1>Ensamble de componentes</h1>
+        <p>
+          Manufactura de componentes de acero y otros materiales, mediante tecnología de última generación: celdas robóticas,
+          corte CNC de lona y corrugado, corte láser de tubo, entre otros.
+        </p>
+
+      </div>
+      <div>
+        <img src="https://img.icons8.com/external-flat-wichaiwi/64/000000/external-maintain-customer-validation-flat-wichaiwi.png" />
+        <h1>Servicios logísticos</h1>
+        <p>
+          Servicios de administración de la cadena de suministros, cuyo impacto directo en las operaciones del cliente, promueve
+          el uso eficiente de los recursos, el control, registro y suministro de materiales necesarios para las operaciones
+          logísticas.
+        </p>
+      </div>
+    </div>
+
+    <div class="services-images reveal">
+      <img src="./assets/images/designer-services.jpg" alt="disenador" style="clip-path: polygon(0% -4%, 100% 31%, 100% 100%, 0% 100%); border-top-left-radius: 65px;">
+      <p>La tecnología no sustituye al talento humano, lo desarrolla y potencializa, como una útil herramienta para el logro de los objetivos. <br><br>Nuestra meta es fomentar en nuestros colaboradores el uso eficiente de la tecnología, para cumplir con las necesidades de nuestros clientes.</p>
+    </div>
+
+    <div class="services-images reveal">
+      <p>Las decisiones estrategicas basadas en el análisis de las capacidades actuales, nos permiten ofrecer servicios planificados y sostenibles.</p>
+      <img src="./assets/images/robot-arm.jpg" alt="robot" style="clip-path: polygon(0 31%, 100% -4%, 100% 100%, 0% 100%); border-top-right-radius: 65px; ">
+    </div>
+
+    <div class="services-images reveal">
+      <img src="./assets/images/logistics-services.jpg" alt="flotilla" style="clip-path: polygon(0% -4%, 100% 31%, 100% 100%, 0% 100%); border-top-left-radius: 65px;">
+      <p>Comprendemos de primera mano la importancia de la precisión en la logística de productos y materiales, por lo que estamos comprometidos con la entrega eficiente y puntual de nuestros servicios y productos.</p>
+    </div>
   </div>
+  <!-- end SERVICES -->
+
+  <!-- begin CONTACT -->
   <div id="contacto-tab" class="tabContent">
     <h1>Contact</h1>
   </div>
+  <!-- end CONTACT -->
+
+  <!-- begin BLOG -->
   <div id="blog-tab" class="tabContent">
     <h1>Blog</h1>
   </div>
+  <!-- end BLOG -->
 
 </body>
 <footer>

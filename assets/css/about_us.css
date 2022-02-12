@@ -19,6 +19,7 @@ div#nosotros-tab{
       margin: 20px 0px;
       object-fit: cover;
       border-radius: 50%;
+
     }
 
     div.text-hero-us > img{
@@ -78,7 +79,23 @@ div#nosotros-tab{
       flex-direction:row;
       width: 95vw;
       justify-content: space-evenly;
-      margin: 15vh 0px;
+      margin: 15vh 2vw;
+      background-color: white;
+      border-radius: 25px;
+    }
+
+    .parallax {
+      /* The image used */
+      background: linear-gradient(90deg, rgba(0,0,0,0.70) 0%, rgba(34,79,128,0.15) 60%),url('../images/racks-parallax.jpg');
+
+      /* Full height */
+      height: 100%;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
 
     div.main-us > img{
@@ -107,7 +124,9 @@ div#nosotros-tab{
       background: linear-gradient(90deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.95) 60%),url('../images/Icon_Bioin.png');
       background-repeat: no-repeat;
       background-position: center;
-      padding: 35px 25px;
+      padding: 45px;
+      position: relative;
+      top: -100px;
     }
 
     div.text-hero-us > h1{

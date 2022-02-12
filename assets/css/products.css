@@ -1,7 +1,15 @@
 div#productos-tab{
   text-align: center;
+  background-image: url('../images/products-background.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+.product-detail{
+  background-color: white;
+}
 
 @media screen and (max-width: 480px) {
   div#productos-tab > hr{
@@ -10,7 +18,7 @@ div#productos-tab{
     margin: 45px auto;
   }
 
-  div#productos-tab > img{
+  div#productos-tab > div > img{
     width: 80vw;
     height: auto;
   }
@@ -31,7 +39,7 @@ div#productos-tab{
     border: none;
     background-repeat: no-repeat;
     width: 95vw;
-    height: 35vh;
+    height: 45vh;
   }
 
   div.product-detail > div > p{
@@ -73,7 +81,7 @@ div#productos-tab{
     border: none;
     background-repeat: no-repeat;
     width: 95vw;
-    height: 35vh;
+    height: 65vh;
   }
 
   div.product-detail > div > p{
@@ -102,6 +110,7 @@ div#productos-tab{
     color: gray;
     font-size: 28px;
     font-family: var(--raleway);
+    padding: 90px 0px 0px 0px;
   }
 
 
