@@ -2,4 +2,12 @@
 @import "./home.css";
 @import "./about_us.css";
 @import "./products.css";
+@import "./services.css";
 @import "./footer.css";
+
+#scrollUp{
+  position: fixed;
+  right: 80px;
+  bottom: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,128 @@
+div#servicios-tab {
+  text-align: center;
+  background-image: url('../images/products-background.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+
+/* Smartphone */
+
+  @media screen and (max-width: 480px) {
+    div#servicios-tab > div > img#welder-services{
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+    }
+
+    div#servicios-tab > div > img {
+      height: 350px;
+      width: auto;
+    }
+
+    div.service-icons{
+      display: flex;
+      flex-direction: column;
+    }
+
+    div.service-icons > div > p{
+      width: 80vw;
+    }
+  }
+  @media screen and (max-width: 810px) {
+    div.services-images > p{
+      color: var(--dark-blue);
+      font-size: 20px;
+    }
+
+    div.services-images > img {
+      height: 25vh;
+      width: auto;
+    }
+
+    div.services-images{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 50px 0px;
+    }
+    div#servicios-tab > div > img#welder-services{
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+    }
+
+    div.service-icons{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin: 75px 0px;
+    }
+
+    div.service-icons > div > img{
+      height: 90px;
+      width: 90px;
+    }
+
+    div.service-icons > div > h1{
+      color: gray;
+      font-size: 28px;
+      font-family: var(--raleway);
+      margin: 15px;
+    }
+    div.service-icons > div > p{
+      width: 25vw;
+      color: black;
+      font-family: var(--raleway);
+      font-size: 16px;
+    }
+  }
+  @media (min-width: 1080px) {
+    div#servicios-tab > div > img#welder-services{
+      height: 350px;
+      width: 350px;
+      border-radius: 50%;
+    }
+
+    div.service-icons{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin: 75px 0px;
+    }
+
+    div.service-icons > div > h1{
+      color: gray;
+      font-size: 28px;
+      font-family: var(--raleway);
+      margin: 15px;
+    }
+
+    div.service-icons > div > img{
+      height: 90px;
+      width: 90px;
+    }
+
+    div.service-icons > div > p{
+      width: 25vw;
+      color: black;
+      font-family: var(--raleway);
+      font-size: 16px;
+    }
+
+    div.services-images{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 50px 0px;
+    }
+
+    div.services-images > p{
+      color: var(--dark-blue);
+      font-size: 24px;
+    }
+  }

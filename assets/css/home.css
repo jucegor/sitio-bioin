@@ -86,6 +86,7 @@ div.hero-logo > img{
   }
 }
 
+
 /* inicio de media queries */
 
 /* Smartphone */
@@ -229,7 +230,7 @@ div.hero-logo > img{
 
     /*Responsive mision*/
       div.mision > * p {
-        font-size: 20px;
+        font-size: 18px;
       }
 
      /* Responsive clientes */
@@ -315,7 +316,7 @@ div.mision > div.bottom {
 }
 
 div#inicio-tab > div.mision > div.up, div.bottom > h1, p {
-  font-family: var(--font-poppins);
+  font-family: var(--raleway);
   padding: 0px 3vw;
   color:white;
 }
