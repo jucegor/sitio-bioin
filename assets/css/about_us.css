@@ -29,7 +29,7 @@ div#nosotros-tab{
 
     div.text-hero-us > p{
       color: black;
-      font-size: 21px;
+      font-size: 16px;
       font-family: var(--font-poppins);
       margin-top: -60px;
       text-align: center;
@@ -61,7 +61,7 @@ div#nosotros-tab{
 
     div.text-hero-us > p{
       color: black;
-      font-size: 21px;
+      font-size: 16px;
       margin-top: -60px;
       text-align: center;
       letter-spacing: 3px;
@@ -119,14 +119,14 @@ div#nosotros-tab{
 
     div.text-hero-us > p{
       color: black;
-      font-size: 21px;
+      font-size: 16px;
       letter-spacing: 3px;
       background: linear-gradient(90deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.95) 60%),url('../images/Icon_Bioin.png');
       background-repeat: no-repeat;
       background-position: center;
       padding: 45px;
       position: relative;
-      top: -100px;
+      top: -60px;
     }
 
     div.text-hero-us > h1{

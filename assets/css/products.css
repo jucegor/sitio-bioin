@@ -72,7 +72,7 @@ div#productos-tab{
 
   div.product-detail > div > p{
     color: rgb(43, 43, 43);
-    font-size: 16px;
+    font-size: 15px;
     font-family: var(--raleway);
     width: 85vw;
     padding: 25px 10px;
