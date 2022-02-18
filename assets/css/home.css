@@ -179,7 +179,7 @@ div.hero-logo > img{
 
   /* Tablet */
 
-  @media screen and (max-width: 810px) {
+  @media screen and (max-width: 820px) {
     /* Responsive hero */
     div.hero-overlap-text {
       flex-direction: column;
@@ -231,6 +231,7 @@ div.hero-logo > img{
     /*Responsive mision*/
       div.mision > * p {
         font-size: 18px;
+        padding: 0px 50px;
       }
 
      /* Responsive clientes */
@@ -315,11 +316,14 @@ div.mision > div.bottom {
   margin-right: auto;
 }
 
-div#inicio-tab > div.mision > div.up, div.bottom > h1, p {
+div#inicio-tab > div.mision > div.up, div.bottom > h1, div.bottom > p {
   font-family: var(--raleway);
   padding: 0px 3vw;
   color:white;
 }
+
+
+
 
 div.mision > div {
   text-align: center;
