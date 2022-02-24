@@ -158,7 +158,7 @@ div#productos-tab{
   div.product-detail > div > div > iframe{
     border: none;
     background-repeat: no-repeat;
-    width: 50vw;
+    width: 30vw;
     height: 96vh;
   }
 

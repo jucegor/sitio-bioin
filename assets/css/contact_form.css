@@ -1,0 +1,33 @@
+:root{
+  --font-poppins: 'Poppins', sans-serif;
+}
+
+div.contact-form * div.contact-titles{
+  font-family: var(--font-poppins);
+}
+
+div.contact-form{
+    margin: 100px 50px 50px 50px;
+    background-color: rgba(34, 80, 129,0.5);
+    /* padding: 50px; */
+    border-radius: 15px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.contact-form * label{
+  color: white;
+}
+
+div.contact-form > form{
+  display: flex;
+  flex-direction: column;
+}
+
+div.contact-form > img{
+  width: 50vw;
+  height: auto;
+  object-fit:fill;
+}

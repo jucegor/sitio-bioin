@@ -10,4 +10,7 @@ home();
 import { scrollTop } from "./scroll.js";
 scrollTop();
 
+import { contact } from "./contact-form.js";
+contact();
+
 console.log("Hello from index!");
