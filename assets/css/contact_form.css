@@ -1,0 +1,136 @@
+:root{
+  --font-poppins: 'Poppins', sans-serif;
+}
+
+div.contact-form * div.contact-titles{
+  font-family: var(--font-poppins);
+}
+
+div.contact-form{
+    margin: 100px 50px 50px 50px;
+    background-color: rgba(34, 80, 129,0.8);
+    /* padding: 50px; */
+    border-radius: 15px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.contact-form * label{
+  color: white;
+  font-family: var(--font-poppins);
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+div.contact-form * input, textarea{
+  border: none;
+  padding: 5px;
+  width: 35vw;
+  border-radius: 15px;
+}
+
+button{
+  padding: 5px;
+  margin: 35px 10px;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+button:hover,
+button:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+
+div.contact-form > form{
+  display: flex;
+  flex-direction: column;
+}
+
+div.form-img-bg > div > img{
+  width: 50vw;
+  height: auto;
+  object-fit:fill;
+  filter: invert(1) grayscale(1) contrast(10) brightness(1000%)
+}
+
+div.form-img-bg{
+  background: linear-gradient(45deg, rgba(101, 80, 49, 0.85), rgba(0, 31, 97, 0.52)), url("../images/hero_products_racks.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 50vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+form * span{
+  color: gainsboro;
+  font-family: var(--font-poppins);
+  font-size: 25px;
+}
+
+div.contact-h1 > h1 {
+  color: gray;
+  font-family: var(--font-poppins);
+  text-align: center;
+  padding: 45px;
+}
+
+div.contact-h1 > div {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(78,115,154, 0.95);
+}
+
+div.contact-h1 > div > div > h1{
+  color: white;
+  font-family: var(--font-poppins);
+  font-size: 24px;
+  margin: 25px 0px
+}
+
+div.contact-h1 > div > div > p{
+  color: white;
+  font-family: var(--font-poppins);
+  font-size: 20px;
+  margin: 25px 0px
+}

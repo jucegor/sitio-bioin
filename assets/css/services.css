@@ -92,6 +92,7 @@ div#servicios-tab {
       flex-direction: row;
       justify-content: space-evenly;
       margin: 75px 0px;
+      align-items: center;
     }
 
     div.service-icons > div > h1{
@@ -124,5 +125,6 @@ div#servicios-tab {
     div.services-images > p{
       color: var(--dark-blue);
       font-size: 24px;
+      padding: 30px;
     }
   }

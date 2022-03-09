@@ -33,7 +33,6 @@ div#nosotros-tab{
       font-family: var(--font-poppins);
       margin-top: -60px;
       text-align: center;
-      font-family: var(--font-poppins);
       letter-spacing: 1px;
       background-image: url('../images/Icon_Bioin.png');
       padding: 35px 25px;
@@ -81,7 +80,7 @@ div#nosotros-tab{
       justify-content: space-evenly;
       margin: 15vh 2vw;
       background-color: white;
-      border-radius: 25px;
+      border-radius: 10px;
     }
 
     .parallax {
@@ -119,6 +118,7 @@ div#nosotros-tab{
 
     div.text-hero-us > p{
       color: black;
+      font-family: var(--raleway);
       font-size: 16px;
       letter-spacing: 3px;
       background: linear-gradient(90deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.95) 60%),url('../images/Icon_Bioin.png');
