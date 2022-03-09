@@ -85,7 +85,7 @@ div.contact-form > form{
   flex-direction: column;
 }
 
-div.form-img-bg > img{
+div.form-img-bg > div > img{
   width: 50vw;
   height: auto;
   object-fit:fill;
@@ -113,4 +113,24 @@ div.contact-h1 > h1 {
   font-family: var(--font-poppins);
   text-align: center;
   padding: 45px;
+}
+
+div.contact-h1 > div {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(78,115,154, 0.95);
+}
+
+div.contact-h1 > div > div > h1{
+  color: white;
+  font-family: var(--font-poppins);
+  font-size: 24px;
+  margin: 25px 0px
+}
+
+div.contact-h1 > div > div > p{
+  color: white;
+  font-family: var(--font-poppins);
+  font-size: 20px;
+  margin: 25px 0px
 }
