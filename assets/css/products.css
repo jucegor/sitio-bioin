@@ -7,6 +7,12 @@ div#productos-tab{
   background-size: cover;
 }
 
+div#productos-tab > div.products-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 .product-detail{
   background-color: white;
 }
@@ -67,12 +73,12 @@ div#productos-tab{
     border: none;
     background-repeat: no-repeat;
     width: 95vw;
-    height: 45vh;
+    /*height: 45vh; */
   }
 
   div.product-detail > div > p{
     color: rgb(43, 43, 43);
-    font-size: 15px;
+    font-size: 16px;
     font-family: var(--raleway);
     width: 85vw;
     padding: 25px 10px;
@@ -95,6 +101,10 @@ div#productos-tab{
     color: gray;
     font-size: 28px;
     font-family: var(--raleway);
+    padding: 25px 0px 0px 60px;
+    position: absolute;
+    top: -5px;
+    right: 270px;
   }
 
 
@@ -158,8 +168,8 @@ div#productos-tab{
   div.product-detail > div > div > iframe{
     border: none;
     background-repeat: no-repeat;
-    width: 30vw;
-    height: 96vh;
+    /* width: 30vw;
+    height: 96vh; */
   }
 
   div.product-detail > div > p{
