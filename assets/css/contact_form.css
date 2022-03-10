@@ -85,11 +85,10 @@ div.contact-form > form{
   flex-direction: column;
 }
 
-div.form-img-bg > div > img{
+div.form-img-bg > img{
   width: 50vw;
   height: auto;
   object-fit:fill;
-  filter: invert(1) grayscale(1) contrast(10) brightness(1000%)
 }
 
 div.form-img-bg{
