@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <header>
-  <div id="navbar-animmenu">
+  <nav id="navbar-animmenu">
     <ul class="show-dropdown main-navbar">
       <div class="hori-selector" style="left: 0px; width: 185px;">
         <div class="left"></div>
@@ -50,11 +50,12 @@
         Blog</a>
       </li> -->
     </ul>
-  </div>
-  <button class="hamburger" id="hamburger">
-    <img src="./assets/images/menu-button.svg" alt="menu">
-  </button>
+    <button class="hamburger" id="hamburger">
+      <img src="./assets/images/menu-button.svg" alt="menu">
+    </button>
+  </nav>
 </header>
+
 <body>
   <!-- begin HOME -->
   <div id="inicio-tab" class="tabContent">
@@ -402,8 +403,8 @@
         </p>
 
 
-        <div class="hovertext" data-hover="⮜ 360° ⮞">
-          <iframe src="./assets/images/carton.png" scrolling="no" width="450" height="450"></iframe>
+        <div class="hovertext">
+          <img src="./assets/images/carton.png" scrolling="no" width="400" height="400"/>
         </div>
         <p>
           <strong>Características:</strong><br>
@@ -422,7 +423,7 @@
   <!-- begin SERVICES -->
   <div id="servicios-tab" class="tabContent">
     <div>
-      <img src="./assets/images/welder.jpg" alt="soldador" id="welder-services">
+      <img src="./assets/images/services2.jpg" alt="ingeniería" id="welder-services">
       <img src="./assets/images/nuestros-servicios.png" alt="nuestros servicios">
     </div>
     <div class="service-icons">
@@ -473,16 +474,16 @@
   <div id="contacto-tab" class="tabContent">
     <div class="contact-form">
       <div class="form-img-bg">
-        <img src="./assets/images/logo-bio-blanco.png" alt="">
+        <img  src="./assets/images/logo-bio-blanco.png" alt="">
       </div>
-      <form id="form" action="" class="form">
+      <form  action="enviar.php" method="post" class="form">
         <h3 class="tag"><span>Déjanos tus datos</span></h3>
         <label for="name">Nombre completo <span>*</span></label>
-        <input name="name" required type="text" id="name" placeholder="Escribe tu nombre completo...">
+        <input name="nombre" required type="text" id="name" placeholder="Escribe tu nombre completo...">
         <label for="email">Correo electrónico <span>*</span></label>
-        <input name="email" type="text" id="email" required placeholder="tu.correo@empresa.com">
+        <input name="correo" type="text" id="email" required placeholder="tu.correo@empresa.com">
         <label for="message">Mensaje</label>
-        <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
+        <textarea id="message" name="mensaje" id="" cols="40" rows="10"></textarea>
         <button type="submit" class="btn primary full">Enviar mensaje</button>
       </form>
       <div></div>
@@ -492,7 +493,7 @@
     <div class="contact-h1">
       <h1>Contacta a nuestro equipo de ventas</h1>
       <div>
-        <img src="./assets/images/ventas.jpg" style="border-radius: 45px; margin: 15px">
+        <img class="none" src="./assets/images/ventas.jpg" style="border-radius: 45px;">
         <div>
           <h1>Medios de contacto</h1>
           <p><strong>Teléfonos: <br> </strong> 722 214 72 53, <br> 722 214 30 69 <br> y 722 215 0910</p>
@@ -553,6 +554,7 @@
 
 </footer>
 <img
+  class="scrollUp"
   src="https://img.icons8.com/external-kmg-design-flat-kmg-design/64/000000/external-up-arrow-kmg-design-flat-kmg-design.png"
   id="scrollUp" />
 <script src="/assets/js/index.js" type="module"></script>

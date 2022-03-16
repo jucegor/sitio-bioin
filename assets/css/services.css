@@ -15,35 +15,43 @@ div#servicios-tab {
       height: 150px;
       width: 150px;
       border-radius: 50%;
+      object-fit: cover;
+       margin-top: 120px;
     }
 
     div#servicios-tab > div > img {
-      height: 350px;
+      height: 240px;
       width: auto;
     }
 
     div.service-icons{
-      display: flex;
+     /* display: flex;*/
       flex-direction: column;
+
     }
 
+     div.service-icons > div {
+
+      margin: 40px;
+    }
     div.service-icons > div > p{
-      width: 80vw;
+      width: auto;
+      margin: 40px;
     }
   }
   @media screen and (max-width: 810px) {
     div.services-images > p{
       color: var(--dark-blue);
-      font-size: 20px;
+      /*font-size: 20px;*/
     }
 
     div.services-images > img {
-      height: 25vh;
+      height: 250px;
       width: auto;
     }
 
     div.services-images{
-      display: flex;
+      /*display: flex;*/
       flex-direction: row;
       justify-content: space-evenly;
       align-items: center;
@@ -53,14 +61,20 @@ div#servicios-tab {
       height: 250px;
       width: 250px;
       border-radius: 50%;
+      margin-top: 120px;
+      object-fit: cover;
     }
 
     div.service-icons{
-      display: flex;
+     /* display: flex;*/
       flex-direction: row;
       justify-content: space-evenly;
-      margin: 75px 0px;
     }
+
+    div.service-icons > div {
+      margin-bottom: 70px;
+    }
+
 
     div.service-icons > div > img{
       height: 90px;
@@ -69,12 +83,12 @@ div#servicios-tab {
 
     div.service-icons > div > h1{
       color: gray;
-      font-size: 28px;
+      font-size: 20px;
       font-family: var(--raleway);
       margin: 15px;
     }
     div.service-icons > div > p{
-      width: 25vw;
+      width: auto;
       color: black;
       font-family: var(--raleway);
       font-size: 16px;
@@ -85,19 +99,21 @@ div#servicios-tab {
       height: 350px;
       width: 350px;
       border-radius: 50%;
+      object-fit: cover;
     }
 
     div.service-icons{
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
-      margin: 75px 0px;
+      margin-bottom: 75px;
+      margin-top: 75px;
       align-items: center;
     }
 
     div.service-icons > div > h1{
       color: gray;
-      font-size: 28px;
+      font-size: 25px;
       font-family: var(--raleway);
       margin: 15px;
     }

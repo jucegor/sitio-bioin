@@ -23,17 +23,18 @@ div#nosotros-tab{
     }
 
     div.text-hero-us > img{
+      padding: 50px;
       height: 45vh;
       width: auto;
     }
 
     div.text-hero-us > p{
       color: black;
-      font-size: 16px;
+      font-size: 21px;
       font-family: var(--font-poppins);
       margin-top: -60px;
       text-align: center;
-      letter-spacing: 1px;
+      letter-spacing: 3px;
       background-image: url('../images/Icon_Bioin.png');
       padding: 35px 25px;
     }
@@ -54,13 +55,14 @@ div#nosotros-tab{
     }
 
     div.text-hero-us > img{
+       padding: 50px;
       height: 25vh;
       width: auto;
      }
 
     div.text-hero-us > p{
       color: black;
-      font-size: 16px;
+      font-size: 21px;
       margin-top: -60px;
       text-align: center;
       letter-spacing: 3px;
