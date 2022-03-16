@@ -131,5 +131,26 @@ div.contact-h1 > div > div > p{
   color: white;
   font-family: var(--font-poppins);
   font-size: 20px;
-  margin: 25px 0px
+  margin: 25px 0px;
+}
+@media screen and (max-width: 810px){
+  .none{
+    display:none;
+  }
+  div.form-img-bg > img{
+ display:none;
+}
+
+div.form-img-bg{
+ display:none;
+}
+div.contact-form > form{
+  width: auto;
+  margin: auto;
+  padding: 10px, 20px;
+}
+div.contact-form > form > input{
+  width: 100%;
+  flex-direction: column;
+}
 }

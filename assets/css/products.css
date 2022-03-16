@@ -8,7 +8,8 @@ div#productos-tab{
 }
 
 div#productos-tab > div.products-header{
-  display: flex;
+  /*display: flex;*/
+  padding: 50px;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -101,10 +102,10 @@ div#productos-tab > div.products-header{
     color: gray;
     font-size: 28px;
     font-family: var(--raleway);
-    padding: 25px 0px 0px 60px;
-    position: absolute;
+    padding: 25px;
+    /*position: absolute;*/
     top: -5px;
-    right: 270px;
+    /*right: 270px;*/
   }
 
 
