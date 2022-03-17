@@ -187,3 +187,7 @@ div#productos-tab > div.products-header{
     color: var(--dark-blue);
   }
 }
+.responsive {
+  width: 100%;
+  height: auto;
+}
